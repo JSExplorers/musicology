@@ -336,8 +336,6 @@ img {
   align-items: center;
   padding: 5rem;
 }
-.btn--price {
-}
 .price--btn-container {
   text-align: center;
   padding: 5rem;
@@ -349,5 +347,86 @@ img {
   .price {
     padding: 6rem;
     height: 100vh;
+  }
+}
+/* Footer */
+.footer {
+  padding: 5rem;
+  background-color: var(--color-dark-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.footer__container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.footer__title {
+  font-size: 3rem;
+  margin: 0;
+}
+.footer__text {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  max-width: 70%;
+}
+.footer__menu-title {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+.footer .list {
+  font-size: 2rem;
+  width: 100%;
+}
+.footer .list .list__item {
+  margin: 2rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.253);
+}
+.footer .list .list__item a {
+  font-family: Montserrat;
+  margin-left: 0;
+  text-transform: capitalize;
+  font-weight: 100;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.footer .list .list__item a:hover {
+  opacity: 1;
+}
+
+.social--icons a {
+  color: rgb(255, 255, 255);
+}
+.social--icon {
+  font-size: 3rem;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+@media (min-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer .list .list__item {
+    margin: 2rem 0;
+    border-bottom: 0;
+  }
+  .footer__menu-title {
+    font-size: 3rem;
+  }
+  .footer__menu-title .list {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .list .list__item a {
+    font-size: 2rem;
+    font-weight: 100;
+  }
+  .footer_grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
